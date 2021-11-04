@@ -1,0 +1,15 @@
+
+version: "3"
+
+services:
+  mc:
+    image: itzg/minecraft-server
+    ports:
+      - 25565:25565
+    environment:
+      EULA: "TRUE"
+      VERSION: 1.12
+      GAMEMODE: 0
+      ONLINE_MODE: "FALSE"
+      volumes: ./minecraft-data:/data
+
